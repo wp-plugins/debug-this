@@ -23,7 +23,7 @@ ob_start();?>
 $html = ob_get_contents();
 ob_get_clean();
 
-#Render debug_this action buffer
+#Render debug_this action to buffer
 ob_start();
 do_action('debug_this', Debug_This::$mode);
 $debug = ob_get_contents();
